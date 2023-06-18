@@ -1,0 +1,20 @@
+<section class="hero" *ngIf="cardsLoaded">
+
+  <div class="bg">
+    <p class="logo">TechChronicles</p>
+
+    <h1 class="subtitle">Hey there! Welcome to TechChronicles. <br> Discover the latest in tech news!</h1>
+
+    <div class="cardContainer">
+      <div class="card" *ngFor="let item of topStories">
+        <h2>{{ item.title }}</h2>
+        <p>by {{item.by}} - {{convertUnixTimestamp(item.time)}}</p>
+        <button mat-button>
+          <a href={{item.url}} target="_blank" rel="noopener noreferrer">Read More →</a>
+        </button>
+      </div>
+    </div>
+
+    <button mat-stroked-button (click)="loadMore()" *ngIf="cardsLoaded" class="loadMoreBTN">Load More</button>
+  </div>
+</section>

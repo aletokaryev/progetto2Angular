@@ -1,0 +1,125 @@
+.hero{
+  width: 100vw;
+  background: linear-gradient(-45deg, #ee52ee, #e73c7e, #1f9cf0, #5605a1);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 20s ease-in-out infinite alternate;
+  -o-animation: gradient 20s ease-in-out infinite alternate;
+  animation: gradient 20s ease-in-out infinite alternate;
+
+  position: relative;
+
+  .logo{
+    font-family: 'Yesteryear', cursive;
+    background-color: none;
+    text-align: center;
+    font-size: 40px;
+    padding-top: 50px;
+    color: white;
+
+    animation: fade-in 1s ease-in;
+  }
+
+  .subtitle{
+    font-family: 'IBM Plex Mono', monospace;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 200px;
+    line-height: 1.8;
+    position: relative;
+
+    animation: slide-in 1s ease-out;
+  }
+}
+
+.loadMoreBTN{
+  margin: 50px;
+}
+
+.cardContainer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1rem;
+  margin: 150px 50px 0 50px;
+  animation: slide-in 3s ease-out;
+}
+
+.card{
+  color: white;
+  background-color: #dfdfdf1c;
+  padding: 1rem;
+  border-radius: 4px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 25px;
+
+  button{
+    animation: fade-in 5s ease-out;
+    margin-left: 300px;
+
+    a{
+      text-decoration: none;
+      color: rgba(255, 255, 255, 0.658);
+    }
+  }
+}
+
+/* Media query per dispositivi grandi */
+@media (min-width: 1024px) {
+  .cardContainer {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+/* Media query per dispositivi più piccoli */
+@media (max-width: 1023px) {
+  .cardContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Media query per dispositivi ancora più piccoli */
+@media (max-width: 600px) {
+  .cardContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+
+@-webkit-keyframes gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@-o-keyframes gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+@keyframes gradient {
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
