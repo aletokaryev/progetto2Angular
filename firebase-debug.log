@@ -1,0 +1,14 @@
+[debug] [2023-06-18T00:40:25.286Z] ----------------------------------------------------------------------
+[debug] [2023-06-18T00:40:25.288Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ale\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-06-18T00:40:25.289Z] CLI Version:   12.4.0
+[debug] [2023-06-18T00:40:25.289Z] Platform:      win32
+[debug] [2023-06-18T00:40:25.290Z] Node Version:  v18.16.0
+[debug] [2023-06-18T00:40:25.290Z] Time:          Sun Jun 18 2023 02:40:25 GMT+0200 (Ora legale dell’Europa centrale)
+[debug] [2023-06-18T00:40:25.291Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-18T00:40:25.383Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-18T00:40:25.384Z] > authorizing via signed-in user (alessandrotokaryev060@gmail.com)
+[debug] [2023-06-18T00:40:25.384Z] [iam] checking project hackernews-d19f8 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-18T00:40:25.388Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/hackernews-d19f8:testIamPermissions [none]
+[debug] [2023-06-18T00:40:25.388Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/hackernews-d19f8:testIamPermissions x-goog-quota-user=projects/hackernews-d19f8
+[debug] [2023-06-18T00:40:25.389Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/hackernews-d19f8:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
