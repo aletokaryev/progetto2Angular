@@ -1,65 +1,58 @@
-.hero{
+.hero {
   width: 100vw;
   background: linear-gradient(-45deg, #ee52ee, #e73c7e, #1f9cf0, #5605a1);
   background-size: 400% 400%;
-  -webkit-animation: gradient 20s ease-in-out infinite alternate;
-  -o-animation: gradient 20s ease-in-out infinite alternate;
   animation: gradient 20s ease-in-out infinite alternate;
-
   position: relative;
-
-  .logo{
-    font-family: 'Yesteryear', cursive;
-    background-color: none;
-    text-align: center;
-    font-size: 40px;
-    padding-top: 50px;
-    color: white;
-
-    animation: fade-in 1s ease-in;
-  }
-
-  .subtitle{
-    font-family: 'IBM Plex Mono', monospace;
-    color: white;
-    text-align: center;
-    font-size: 40px;
-    margin-top: 200px;
-    line-height: 1.8;
-    position: relative;
-
-    animation: slide-in 1s ease-out;
-  }
 }
 
-.loadMoreBTN{
-  margin: 50px;
+.logo {
+  font-family: 'Yesteryear', cursive;
+  text-align: center;
+  font-size: 2.5em;
+  padding-top: 5vh;
+  color: white;
+  animation: fade-in 1s ease-in;
+}
+
+.subtitle {
+  font-family: 'IBM Plex Mono', monospace;
+  color: white;
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20vh;
+  line-height: 1.4;
+  position: relative;
+  animation: slide-in 1s ease-out;
+}
+
+.loadMoreBTN {
+  margin: 2em;
 }
 
 .cardContainer {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1rem;
-  margin: 150px 50px 0 50px;
+  margin: 10vh 2em 0;
   animation: slide-in 3s ease-out;
 }
 
-.card{
+.card {
   color: white;
-  background-color: #dfdfdf1c;
+  background-color: rgba(223, 223, 223, 0.11);
   padding: 1rem;
   border-radius: 4px;
-  height: 150px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin-top: 25px;
+  margin-top: 1.5em;
 
-  button{
+  button {
     animation: fade-in 5s ease-out;
-    margin-left: 300px;
+    margin-left: auto;
 
-    a{
+    a {
       text-decoration: none;
       color: rgba(255, 255, 255, 0.658);
     }
@@ -87,21 +80,16 @@
   }
 }
 
-
-@-webkit-keyframes gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-o-keyframes gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
 @keyframes gradient {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes fade-in {
